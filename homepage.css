@@ -1,8 +1,9 @@
 body {
-	background-color:#e4e6a8
+	background-color:#e4e6a8;
+	display: grid;
+    grid-template-rows: auto 1fr auto;
 }
 
 footer {
-	background-color: aqua
-	max-height: 200px
+
 }
