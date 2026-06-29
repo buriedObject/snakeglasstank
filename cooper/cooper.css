@@ -1,0 +1,15 @@
+.galleryWall {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 20px;
+}
+
+.frame {
+    border: 2px black;
+    margin: 2px black;
+    background-color: brown;
+}
+
+.about {
+    grid-column: 3 / span 2;
+}
