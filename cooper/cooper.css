@@ -6,20 +6,35 @@ body {
     margin: 120px;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(12, 1fr);
-    gap: 20px;
+    grid-template-rows: repeat(12, minmax(20px, 1fr));
+    gap: 30px;
 }
 
 .frame {
+    all: unset;
+    cursor: pointer;
+    color: transparent;
     border: 5px solid black;
     background-color: white;
-    display: grid;
-}
-
-.about {
-    grid-area: 4 / 4 / 6 / 7;
 }
 
 .work {
-    grid-area: 3 / 3 / 4 / 6;
+    grid-area: 3 / 3 / 11 / 5;
+}
+
+.about {
+    grid-area: 3 / 5 / 11 / 7;
+}
+
+.THREE {
+    grid-area: 3 / 7 / 11 / 9;
+}
+
+.FOUR {
+    grid-area: 3 / 9 / 11 / 11;
+}
+
+.frame:hover {
+    box-shadow: black 10px 10px;
+    color: black
 }
